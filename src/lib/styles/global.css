@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sweet-sans-pro');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html{scroll-behavior: smooth !important;}
+
 .custom-screen {
-  @apply max-w-screen-xl mx-auto px-4 md:px-8;
+  @apply max-w-screen-xl mx-auto px-4 md:px-8 !important;
 }
 
 .gradient-border {
@@ -20,3 +25,29 @@
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
 }
+
+.background-features-img{
+  background: url('/background-features-md.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.background-features-color{
+  background: #fff;
+}
+/*
+@media (min-width: 800px) {
+  .background-features {
+    background-size: 300% !important;
+    background-repeat: no-repeat !important; 
+    background: url('/background-features-sm.png') !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .background-features {
+    background-size: 500% !important;
+    background-repeat: no-repeat !important;
+    background: url('/background-features-md.png') !important;
+  }
+} */

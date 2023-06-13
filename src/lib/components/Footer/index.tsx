@@ -1,15 +1,19 @@
 "use client";
 
+import Link from "next/link";
+import Brand from "../Brand";
+import Image from "next/image";
 import { socialInfo } from "./footerLinks";
 
+
 const Footer = () => (
-  <footer>
-    <div className="custom-screen pt-16">
-      <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
-        <p className="text-gray-600">
-          © 2023 Setup Junior. Todos os direitos reservados.
-        </p>
-        <div className="flex items-center gap-x-6 text-gray-400 mt-6">
+  <footer className="bg-dark-blue">
+    <div className="custom-screen">
+      <div className=" py-8 items-center sm:justify-between jusitfy-evenly sm:flex">
+        <Link href="/">
+          <Image src="/setupJr-white.svg" width={130} height={50} alt="SetupJR logo" />
+        </Link>
+        <div className="flex my-[2rem] sm:my-0 items-center gap-x-6 text-gray-400 mt-6">
           {socialInfo.map((item, idx) => (
             <a
               key={idx}
@@ -22,6 +26,9 @@ const Footer = () => (
             </a>
           ))}
         </div>
+        <Link className="my-[2rem] sm:my-0" href="#nav">
+          <Image src="/up-arrow.svg" width={60} height={60} alt="Retornar ao início da página" />
+        </Link>
       </div>
     </div>
   </footer>
