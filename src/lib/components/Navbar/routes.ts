@@ -1,4 +1,4 @@
 export const navigation = [
-  { title: "Funcionalidades", path: "#features" },
-  { title: "Recomendações", path: "#testimonials" },
+  { title: "Quem somos", path: "#about" },
+  { title: "Serviços", path: "#services" },
 ];

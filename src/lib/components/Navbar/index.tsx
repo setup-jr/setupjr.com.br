@@ -28,20 +28,20 @@ const Navbar = () => {
   };
 
   return (
-    <header>
+    <header id="nav">
       <nav
-        className={`bg-white w-full md:static md:text-sm ${
+        className={`bg-white w-full h-[10.625rem]  pt-[2.5rem] md:static md:text-[1rem] ${
           state ? "fixed z-10 h-full" : ""
         }`}
       >
-        <div className="custom-screen items-center mx-auto md:flex">
+        <div className="custom-screen items-center max-w-xl  mx-auto md:flex">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Brand />
             <div className="md:hidden">
               <button
                 role="button"
                 aria-label="Open the menu"
-                className="text-gray-500 hover:text-gray-800"
+                className=" hover:text-red"
                 onClick={handleNavMenu}
               >
                 {state ? (
@@ -81,10 +81,10 @@ const Navbar = () => {
               state ? "" : "hidden"
             }`}
           >
-            <ul className="text-gray-700 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0 md:text-gray-600 md:font-medium">
+            <ul className="text-blue justify-end font-title items-center space-y-6 md:flex md:space-x-16 md:space-y-0  md:font-regular">
               {navigation.map((item, idx) => {
                 return (
-                  <li key={idx} className="duration-150 hover:text-gray-900">
+                  <li key={idx} className="duration-200 hover:text-dark-blue">
                     <Link href={item.path} className="block">
                       {item.title}
                     </Link>
@@ -93,8 +93,8 @@ const Navbar = () => {
               })}
               <li>
                 <NavLink
-                  href="/contato"
-                  className="block font-medium text-sm text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 md:inline"
+                  href="#contact"
+                  className="block font-regular text-[1rem] text-white bg-blue hover:bg-dark-blue md:inline"
                 >
                   Entre em contato
                 </NavLink>

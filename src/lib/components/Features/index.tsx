@@ -5,18 +5,18 @@ import { features } from "./features";
 
 const Features = () => {
   return (
-    <SectionWrapper>
-      <div id="features" className="custom-screen text-gray-600">
-        <ul className="grid gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+    <SectionWrapper className="h-full ">
+      <div id="features" className="h-full bg-no-repeat  bg-cover bg-[url('/background-features-xs.png')] sm:bg-[url('/background-features-sm.png')]  md:bg-[url('/background-features-md.png')]">
+        <ul className=" w-full custom-screen flex flex-col  md:h-full h-auto pt-[5.5rem] md:pt-0 md:flex-row items-center justify-center md:justify-evenly ">
           {features.map((item, idx) => (
-            <li key={idx} className="space-y-3">
-              <div className="w-12 h-12 border text-indigo-600 rounded-full flex items-center justify-center">
+            <li key={idx} className="space-y-3 w-[22rem] md:w-[25rem] my-12 sm:my-16 md:my-0 flex flex-col justify-center text-center text-white">
+              <div className=" w-full flex justify-center items-center">
                 {item.icon}
               </div>
-              <h4 className="text-lg text-gray-800 font-semibold">
+              <h4 className="md:text-[1.875rem] sm:text-[1.75rem] text-[1.575rem] font-semibold">
                 {item.title}
               </h4>
-              <p>{item.desc}</p>
+              <p className="">{item.desc}</p>
             </li>
           ))}
         </ul>

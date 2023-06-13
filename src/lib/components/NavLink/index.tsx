@@ -12,7 +12,7 @@ const NavLink = ({ children, href, ...rest }: NavLinkProps) => (
   <Link
     href={href}
     {...rest}
-    className={`py-2.5 px-4 text-center rounded-lg duration-150 ${
+    className={`py-[1rem] px-[1.125rem] cursor-pointer text-center rounded-lg duration-200 ${
       rest?.className || ""
     }`}
   >
