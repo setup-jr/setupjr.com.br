@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description: "Setup JR official website",
   viewport: "width=device-width, initial-scale=1",
   creator: "Setup JR",
+
   authors: [
     { name: "Henrique GC" },
     { name: "Gustavo Denobi" },
@@ -29,9 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth" lang="pt-BR">
-      {/* <head>
+      <head>
         <link rel="icon" href="/favicon.ico" />
-      </head> */}
+      </head>
 
       <body className={`md:overflow-visible ${jost.className}`}>
         <Navbar />

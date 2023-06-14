@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <header id="nav">
       <nav
-        className={`bg-white w-full h-[10.625rem]  pt-[2.5rem] md:static md:text-[1rem] ${
+        className={`bg-white w-full z-50 h-[10.625rem]  pt-[2.5rem] md:static md:text-[1rem] ${
           state ? "fixed z-10 h-full" : ""
         }`}
       >
